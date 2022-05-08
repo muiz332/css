@@ -1,0 +1,69 @@
+/*gradient*/
+/*gradient adalah teknik untuk memberikan warna gradiasi pada elemen yang kita punya*/
+/*ada dua tipe gradient yang kita bisa gunakan yaitu linear gradient, dan radial gradient*/
+
+/*linear gradient membarikan gradiasi warna secara garis lurus*/
+
+/*linear-gradient bukan properi dari css3 melainkan value untuk background image*/
+
+/*nah sekarang kita akan membarikan warna gradiasi pada kotak ini*/
+/*untuk value dari linear gradient yang didalam kurung itu warna pertamanya apa kemudian warna keduanya apa*/
+
+/*sintaxs sederhana*/
+/*background-image: linear-gradient(<warna awal>, <warna akhir>)*/
+/*bisa pake rgba bisa pake rgb bisa pake heksa bisa pakek hsla*/
+
+div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(rgba(255, 0, 0 ),rgba(0, 0, 255),rgba(0, 255, 0));
+}
+/*maka hasilnya setengahnya warna merah dan setengahnya lagi warna hijau*/
+/*lalu bagaimana jika kita ingin lebih dari dua warna? nah gampang aja caranya tinggal kita kasih koma dibelakang warna terakhir*/
+/*nah itulah yang disebut multiple color*/
+
+/*nah sekarang kita akan mencoba mengatur arah gradientnya, kalo tadi arah defaultnya dari atas kebawah, nah gimana kalo saya ingin dari kiri kekanan?*/
+
+/*sintax lengkap*/
+/*background-image: linear-gradient(sudut,| arah, warna awal, warna akhir)*/
+/*nah kalian bisa pakai sudut atau memakai arah*/
+/*contoh sudut*/
+/*div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(90deg, rgba(255, 0, 0 ),rgba(0, 0, 255),rgba(0, 255, 0));
+    /*nah maka akan muncul warnanya dari kiri kekanan kalo mau dari kanan kekiri tinggal kita berikan
+    minus(-)
+    deg(derajat)
+    kalian tinggal ganti aja mau sudutnya berapa
+}*/
+
+/*nah sekarang menggunakan arah  kita bisa kasih top bottom(dari atas kebawah), to left(dari kanan ke kekiri), to right(dari kiri kekanan), to top(dari bawah keatas)*/
+/*kebalikannya arah tersebut*/
+/*atau kita mau kasih diagonal 
+to left top, to left bottom, to right top, to right bottom, dll*/
+
+/*contoh arah*/
+div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(to top right,rgba(255, 0, 0 ),rgba(0, 255, 0));
+}
+
+/*nah selanjutnya color stop*/
+/*dengan color stop kita bisa memberikan bobot warna secara berbeda/*
+/*misalkan saya ingin lebih banyak merahnya dari pada hijaunya*/
+/*itu kita menggunakan color stop*/
+/*nah kita bisa memberikan color stop setelah warnanya*/
+/*nilainya berupa angka%*/
+
+/*contoh color stop*/
+/*div{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: linear-gradient(to right bottom,rgba(255, 0, 0 )63%,rgba(0, 255, 0)80%);
+}

@@ -1,0 +1,38 @@
+/*nah jika anda tidak menambahkan properti border-radius maka ujungnya akan tetap lancip
+nah terus bagaimana caranya menambahkan border-radius?*/
+/*contoh border-radius
+div{
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    margin: auto;
+    border-radius: 30px;/*jika ingin membuat lingkaran kita harus memberikan value setengah dari lebarnya
+    tetapi kalo ingin mudah tinggal kasih 50% saja jadi berapapun widthnya maka border-radius akan memberikan nilai setengah dari width tersebut
+    text-align: center;
+    line-height: 300px;/*harus sesuai dengan height agar tulisannya berada ditengah
+}maka ujungnya akan tumpul sebanyak 30px*/
+
+/*nah bagaimana jika widthnya berbeda besarnya maka bentuknya akan lonjong*/
+
+/*nah bagaimana jika kita ingin membuat tumpul 1 sisi?*/
+/*misalkan kita ingin sisi atas pojok kanan tumpul yang lain tetap lancip*/
+/*contoh*/
+
+div{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    margin: auto;
+    background-color: salmon;
+    border-top-right-radius: 30px;/*kita tinggal kasih border-top(sisi atas)-right(pojok kanan)-radius: 30px;*/
+    /*nah terus bagaimana jika kita ingin atas pojok kiri dan kanan menjadi tumpul?*/
+    /*kita tinggal tambahkan border-top-left-radius: ;*/
+    border-top-left-radius: 30px;
+}
+/*jadi kalian bisa menggunakan: border-radius, border-top-right-radius, border-top-left-radius, border-bottom-right-radius, dan border-bottom-left-radius.*/
+
+/*bisa juga kita menyingkatnya urutannya searah jarum jam*/
+/*border-radius: 20px 30px 30px 30px; dimulai dari atas kiri lalu searah dengan jarum jam*/
+
+/*jika kita ingin menggunakan gambar sebagai backgorund-image tidak ada yang salah tetapi jika kita menggunakan tag img didalam div maka divnya kita kasih overflow hidden agar conten yang keluar dari parentnya itu hilang lalu kita bisa atur sesuai selera*/

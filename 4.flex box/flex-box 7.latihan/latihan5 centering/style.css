@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+/*centering*/
+/*centering untuk membuat sebuah elemen berada ditengah tengah persis dari elemen pembungkusnya*/
+
+/*.container{
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    border: 1px solid;
+}
+.container .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(75, 75, 245);
+    margin: 200px auto;
+    text-align: center;
+    line-height: 100px;/*nah ini akan jadi masalah jika tulisannya panjang lalu bagaimana cara mengatasinya?
+    color: white;
+}
+
+/*kan sebelumnya kita kasih margin auto ternyata yang jalan hanya kiri dan kanan(horizontal)
+lalu bagaimana agar jalan semua kiri kanan atas bawah? kita tinggal kasih display flex lalu kasih margin auto di itemnya*/
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    border: 1px solid;
+    display: flex;
+}
+.container .kotak{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(75, 75, 245);
+    margin: auto;/*maka atas bawah kiri kanannya akan berada ditengah tengah, caranya sama seperti tadi tetapi tulisannya kita bungkus bisa menggunakan div atau span kita juga bisa bikin tulisannya banyak*/
+    color: white;
+    display: flex;
+}
+.container .kotak span{
+    margin: auto;
+    text-align: center;
+}

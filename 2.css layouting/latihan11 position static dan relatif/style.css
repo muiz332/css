@@ -1,0 +1,52 @@
+div{
+    width: 200px;
+    height: 200px;
+
+}
+/*
+.satu{
+    background-color: green;
+}
+.dua{
+    background-color: red;
+    margin-left: 30px;/*kita kasih margin-left agar bergeser ke kanan
+    margin-top: 30px;jika dikasih margin-bottom maka akan bergeser ke bawah*/
+    /*tapi masalahnya elemen elemen yang berada dibawahnya akan ikur bergeser kebawah itu prilaku margin*/
+    /*nah jadi sekarang bagaimana caranya kita menggeser elemen tanpa mempengaruhi elemen dibawahnya(setelahnya)*/
+    /*nah disitulah saatnya kita menggunakan position*/
+    /*position memungkinkan kita untuk menggeserkan sebuah elemen tanpa mempengaruhi elemen setelahnya*/
+
+    /*untuk menggunakan position kita membutuhkan properti yang namanya position dan valuenya yang kita bisa gunakan ada 4 yaitu static,relatif,absolute,dan fixed*/
+    /*default dari properti position adalah static jadi kalau kita tidak menambahkan value apapun defaultnya adalah static*/
+    /*menggunakan position selain static akan membuat sebuah elemen menjadi seolah olah berbeda dimensi dari elemen lainnya*/
+    /*elemen yang diberi position selain statict dapat menggunakan properti seperti top,left,bottom,dan right untuk mengatur posisinya
+}
+.tiga{
+    background-color: blue;
+}
+*/
+/*contoh propeti relatif*/
+
+.satu{
+    background-color: green;
+}
+.dua{
+    background-color: red;
+    position: relative;   
+    /*kalo kita lihat tidak terjadi apa-apa nah terus apa bedanya?*/
+    /*jika kita kasih position: relative ke warna merah maka warna merah itu akan maju satu dimensi(satu langkah)*/
+    /*jadi kalo warna merah kita geser kemanapun dia tidak akan mengganggu atau mempengaruhi elemen dbawahnya atau setelahnya*/
+    /* top: 30px; */
+    /*maka dia akan turun*/
+    /*jadi kotak yang warna biru itu dia tidak ikut bergaser karena yang warana merah sudah maju satu dimensi(maju satu langkah kedepan)*/
+    /*dan kita bisa mengatur posisi warna merah sesuka hati*/
+    left: 30px;
+}
+.tiga{
+    background-color: blue;
+}
+/* ada hal yang kalian harus perhatikan*/
+/*relative*/
+/*ketika kita menggerakkan elemen dengan posisi relativ(menggunakan top,left,bottom,dan right) ruang yang ditempati oleh elemen tersebut masih ada*/
+/*ketika kita menggerakkan elemen dengan posisi relatve, elemen akan bergerak relatif terhadap posisi semulanya*/
+/*jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya*/

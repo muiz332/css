@@ -1,0 +1,8 @@
+body{
+    color: green;
+    font-family: arial;
+}
+/*kita kasih color inharit agar bisa mewarisi nilai dari properti color*/
+a{
+    color: inherit;
+}

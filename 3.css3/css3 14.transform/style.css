@@ -1,0 +1,31 @@
+/*transform*/
+/*transform adalah properti css3 yang memungkinkan kita dapat memanipulasi format visual dari elemen html*/
+/*format visualnya ada macam-macam bisa ukuran bisa bentuk dari elemennya maupun posisi*/
+/*kita dapat melakukan transform 2 dimensi atau 3 dimensi, disini kita akan gunakan transform 2 dimensi yang 3 dimensi src aja diyt*/
+
+/*sintaxnya
+transform: fungsi;*/
+/*fungsinya ada banyak yaitu
+-scalex or scaley(memperbesar atau memperkecil) value(angka)
+-rotate(memutar) value(deg)
+-skewx or skewy(condong/miring) value(deg)
+-translatex or traslatey (mengubah posisi) value(px)
+*/
+/*kalian juga bisa gunakan 2 parameter diproperti scale ini   transform: scale(1.2, 2); 2=dua kalilipat elemennya*/
+/*nilai trasform juga bisa kita tumpuk/lebih dari 1*/
+
+.kotak{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin: 50px auto;
+}
+.kotak:hover{
+    transform: rotatex(180deg);
+    transition: 2s;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+/*transform lebih baik dari pada position*/

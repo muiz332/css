@@ -1,0 +1,68 @@
+body{
+    background-image: url(./muiz.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*
+div{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+
+/*nah sekarang bagaimana agar kotak ini trasparan?*/
+
+/*opacity*/
+/*opacity yaitu properti yang digunakan untuk mengatur transparansi sebuah elemen*/
+/*nah terus bagaimana cara memakai proprti opacity?*/
+/*contoh opacity*/
+/*.satu{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    opacity: 0.7;/*tinggal kita kasih valuenya, valuenya kalian bisa kasih nilai dari 0-1, 0 itu sama saja 0 dan 1 itu sama saja dengan 100, lalu bagaimana jika kita ingin memberikan valuenya 80, kita tinggal tambahkan value 0.8 */
+
+    /*semakin kecil nilainya maka semakin transparant*/
+
+    /*kalo value diproperti opacity itu bisa saja kalian tidak tulis jadi 0.7 sama dengan .7
+}
+
+/*nah sekarang bagaimana jika didalam div ada div lagi atau kotak lagi?*/
+
+/*.dua{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+/*maka yang terjadi adalah warna biru juga akan transparant, lalu kenapa bisa transparant padahal kita tidak menggunakan opacity pada kotak warna biru?*/
+/*karena dia mewarisi transparansi dari elemen parentnya(pembungkusnya)*/
+/*nah lalu bagaimana caranya agar kotak warna biru tidak transparan terhadap kotak warna merah?*/
+/*kita tinggal kasih aja position absolute*/
+/*dan jangan lupa agar kotak warna biru itu nyangkut diparentnya maka parentnya kita kasih position relativ*/
+/*contoh*/
+.satu{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    opacity: 0.7;
+    right: -18px;
+    bottom: -18px;
+}
+/*catatan jika kalian menambahkan opacity dikotak warna biru 0.7 juga maka hasilnya kotak warna biru akan lebih transparan daripada kotak warna merah karena opacity dikotak warna biru adalah setengahnya dari kotak warna merah*/
+
+/*nah sekarang bagaimana kalo misalkan kotak warna merah tidak transparant tetapi kotak warna biru transparan?*/
+/*nah tinggal kita hapus aja opacitynya dikotak warna merah*/
+
+/*nah sekarang bagaimana jika kotak warna merah transparan tetapi kotak warna biru tidak trasparan terhadap background pada body?*/
+
+/*jawabanya kita tidak bisa membuat sebuah elemen child itu tidak transparant selama parentnya mempunyai opacity(transparant*/

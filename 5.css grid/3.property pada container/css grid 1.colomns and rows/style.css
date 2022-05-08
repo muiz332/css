@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*columns and rows*/
+/*properti yang kita bahas kali ini adalah grid-temlate-columns dan grid-temlate-rows 
+
+ini adalahh dua properti yang penting yang bisa kita gunakan untuk mendefinisikan kolom/baris dengan cara menuliskan nilai dipisanhkan oleh spasi. nilai mereprentasikan ukuran grid track dan spasi merepresentasikan grid line*/
+
+/*cara menuliskanya bagaimana?
+.container{
+    display: grid;
+    grid-template-columns: track-size | line-name track-size ;
+    grid-template-row: track-size | line-name track-size;
+
+    nah kalo line kan berupa angka nantikita bisa ganti dengan nama
+
+    track-size bisa berupa px,%,auto,atau fr(fraction)
+
+    line-name: nama yang bisa kita berikan pada track*/
+.container{
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100px 25% 1fr;/*maka yang terjadi kolomnya hanya satu dan lebarnya 100px nah colom berikutnya karena kita tidak tuliskan maka dia akan turun kebawah anggap saja sama dengan display: flex; dia akan berada disampingnya*/
+    /*nah jika kita ingin mengatur lebar dari barisnya maka gunakan grid-template-row: ;*/
+    grid-template-rows: 20px 40px 80px;
+
+    /*nah supaya lebih jelas lagi kita buka dibrowser fire fox lalu klik kanan inspect*/
+
+}
+.container .item{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.container .item:nth-child(even){
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+    

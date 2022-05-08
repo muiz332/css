@@ -1,0 +1,33 @@
+/*transition*/
+/*transition adalah properti css3 yang memungkinkan dapat mengubah nilai dari properti html secara halus*/
+/*perbedaan transition dan animation jadi didalam css itu ada dua properti yang fungsinya mengubah nilai dari properti html secara halus, yang membedakan hanyalah keadaan awal dan keadaan akhirnya*/
+
+/*sintax transition
+transition: properti, durasi, fungsi, delay;*/
+/*yang durasi adalah parameter yang wajib ditulis yang lainnya itu opsional*/
+/*durasi kita bisa isi dengan angka dan angka tersubut memiliki satuan s/ms*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid;
+}
+.kotak{
+    width: 100px;
+    height: 100px;/*ini adalah keadaan awal*/
+    background-color: lightskyblue;
+    transition: 2s;/* 2 maka dia akan terlihat jelas perputarannya kalo mousenya digeser kekotak dia akan berputar kalo mousenya keluar dari kotak dia akan kembali seperti semula kalo kita kasih transition di class kotak*/
+    /*3 nah jika kita kasih transition dihover maka saat mouse kekotak dia akan berputar sebanyak 180deg kalo mouse keluar kotak maka dia akan kembali seperti semula secara instan*/
+}
+/*untuk keadaan akhirnya kita bisa menggunakan hover*/
+.container:hover .kotak{
+     transform: rotate(180deg);/*1 maka akan terlihat sama saja nah sebetulnya dia sudah berputar putaran 180deg ini adalah posisi kotaknya kalo mau lihat secara jelas ganti 45deg nah karena perubahannya sangat instan sehingga kita tidak bisa melihat perubahannya maka kita akan mengubahnnya secara halus menggunakan trasition*/
+
+     margin-left: 800px;/*4maka dia akan terlihat gerakannya patah patah untuk menghindari ini kita akan bungkus kotak dengan div lain*/
+     /*5lalu ganti kotak dihover dengan container lalu tambahkan .kotak setelah hover, jadi bebannya akan berada dicontainer*/
+
+}
+
+/*catatan yang kita tidak bisa animasikan: font-family, display, position*/

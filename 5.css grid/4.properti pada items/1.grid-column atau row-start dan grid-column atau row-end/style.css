@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*grid-column/row-start dan grid-column/row-end*/
+/*grid-column/row-start dan grid-column/row-end berfungsi untuk menentukan tempat dari grid item degan mengacu pada nomor atau grid line yang spesifik
+sintax
+.item{
+	grid-column/row-start: nomor | nama |span nomor | span nama | auto;
+	grid-column/row-end: nomor | nama |span nomor | span nama | auto;
+}
+
+nomor | nama mengacu pada nomor atau nama yang kita beri pada grid line
+
+span nomor item akan memanjang / melebar sampai sejumlah nomor
+
+span nama items akan memanjang / melebar sampai ke nama grid line tertentu
+
+kalo kita kasih span 2 maka dia akan nambah 1 kolom/baris*/
+
+.container{
+	margin: 40px auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr;
+	grid-template-rows: [satu] 100px [dua] 100px [tiga] 100px;
+	gap: 4px;
+}
+.container .item-satu{
+	background-color: blue;
+	
+	/*contoh 1 */
+	/* grid-column-start: 2;/*dimulai dari nomor 2*/
+	/* grid-column-end: 4;/*berakhir dinomor 4 */
+	/* grid-row-start: 2;dimulai dari nomor 2 */
+	/* grid-row-end: 4;berakhir dinomor 4 */ 
+/* 
+	/*contoh 2 
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 1;
+	grid-row-end: span 2; */
+
+	/* untuk contoh yang ke 3 selain angka kita juga bisa memberikan nama pada linenya tetapi syaratnya kalo mau jalan kita harus beri nama line dulu di grid-template-columns dan grid-template-rows  */
+
+	/* grid-column-start: satu;
+	grid-column-end: dua;
+	grid-row-start: satu;
+	grid-row-end: dua; */
+
+	/* contoh 3 menggunakan nilai negatif */
+	grid-column-start: -1;
+	grid-column-end: -2;
+	grid-row-start: -2;
+	grid-row-end: -3;
+}
+.container .satu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

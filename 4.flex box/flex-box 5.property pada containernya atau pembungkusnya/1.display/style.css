@@ -1,0 +1,80 @@
+/* kita lihat properti pada containernnya, jadi kalau mau flexnya berjalan dengan baik kita akan kasih properti dipembungkusnya dan juga di elemennya didalammya atau ke items/childnya
+
+yang pertama yang kita bisa kasih adalah display: flex;
+cara menggunakanmya
+.container{
+    display: flex;
+}
+
+jadi flexnya tidak akan jalan kalau pembungkusnyaatau containenya tidak kita kasih display: flex; atau inline-flex
+*/
+
+/*nah jadi tujuan dari flex ini adalah membuat sebuah elelemen parent menjadi flex-box dan menbuah elemen elemen didalamnnya bisa berprilaku flex juga*/
+/*contoh*/
+/*.container{
+    width: 600px;
+    border: 4px solid;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container div{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 255, 0.808);
+    float: left;
+}
+/*nah caranya cukup banyak nanti dengan menggunakan flex-box kita tidak perlu melakukan banyak hal ini*/
+/*nah caranya kita hanya perlu memberikan containernnay display: flex;*/
+
+.container{
+    width: 600px;
+    border: 4px solid;
+    margin: 30px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.container div{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 255, 0.808);
+    margin: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

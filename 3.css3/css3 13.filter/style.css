@@ -1,0 +1,26 @@
+/*filter*/
+/*filter yaitu properti css3 yang digunakan untuk memberikan efek visual pada gambar, background, atau border*/
+
+/*sintaxnya
+filter: tipe-filter;
+nah efeknya sangat banyak kita akan mencobanya 1 persatu
+-blur(px)
+-brightness(%)
+-contrast(%)
+-grayscale(%)
+-sepia(%)
+-hue-rota(deg)
+-invert(%)
+-opacity(%)
+-drop-shadow(sama seperti box-shadow) jika untuk merubah text anda gunakan text-shadow jika anda menggunakan drop-shadow maka anda cupu tambahkan drop shadow saja*/
+/*nah kalo kalian punya gambar yang didalamnya ada tulisan jika kalian menggunakan box shadow maka yang diberi bayangannya adalah gambarnya, jika  anda menggunakan filter drop shadow yang diberi bayangannya adalah tulisannya*/
+/*drop-shadow itu gabungan antara text-shadow dan box-shadow jadi bisa memberikan bayangan pada gambar atau elemen juga bisa memberikan bayangan pada text*/
+
+body{
+    text-align: center;
+}
+img{
+    height: 400px;
+    filter: -invert(30%)
+}
+/*jika anda ingin mengatur gambar secara interaktif konjungi website ini fiter editor*/

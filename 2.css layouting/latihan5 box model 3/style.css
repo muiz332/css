@@ -1,0 +1,66 @@
+/*catatan padding tidak bisa diberi nilai negatif*/
+/*padding tidak memiliki nilai auto*/
+/*padding menambah ukuran box(kotaknya)*/
+/*div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}*/
+/*catatan padding mempengaruhi ukuran box jika awalnya kita membuat box tinggi dan lebarnya  300px lalu kita tambahkan padding 40px atas,bawah,kiri,kanan maka ukuran box tadi akan membesar menjadi 380px lebar maupun tingginya karena padding menambah besarnya jadi misalnya height 300px dan anda membuat padding-top dan bottom maka 300px+40atas+40bawah=380px*/
+/*jika ingin ukurannya tetap 300px maka anda bisa menguranginya dari 300 menjadi 220px
+
+/*border*/
+/*boder yaitu batas disekeliling content dan pading*/
+/*contoh boder*/
+
+/*div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border:4px solid green;
+    
+}*/
+/*border sama seperti padding yaitu  menambah nilai*/
+/*cara mengatasinya tinggal dikurangi aja seperti padding*/
+
+/*jika anda ingin mudah tanpa menghitung anda bisa gunakan box-sizing: border-box; maka lebar kotak nya akan mengikuti lebar awalnya jika awalnya 300px maka jika anda memberika padding/border maka akan tetap 300px*/
+/*contoh*/
+div{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+.satu{
+    background-color: aqua;
+    border: 4px solid green;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.dua{
+    background-color: aqua;
+    border: 4px solid green;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    overflow: scroll;
+}
+/*maka ukuran kotaknya tatap 300px*/

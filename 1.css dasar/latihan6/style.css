@@ -1,0 +1,86 @@
+/*pseudo-class yang berhubungan dengan link)*/
+
+
+/*:link (style default pada sebuah link /a yang memiliki href*/
+
+/*:hover yaitu style ketika kusor mouse berada diatas sebuah link/elemen*/
+
+/*:active yaitu ketika sebuah link diklik(keadaan aktif*/
+
+/*:visited yaitu style ketika sebuah link sudah pernah dikunjungi sebelumnya(menggunakan browser yang sama*/
+
+/*contoh :link
+.hello:link {
+    color: black;
+}
+.hello{
+    color: orange;
+} sama saja*/
+
+/*contoh :hover
+.hello:hover{
+    color:red;
+    background-color: black;
+}*/
+
+/*contoh:active
+.hello:active{
+    font-style: italic;
+}*/
+
+/*contoh: visited*/
+/*.hello:visited{
+    color: red;
+}*/
+/*linknya akan berubah menjadi merah ketika kita pernah mengunjunginya*/
+
+/*pseudo-class yang behubungan dengan posisi elemen*/
+
+/*:first-child yaitu memilih elemen pertama dari sebuah parent(pembungkusnya)*/
+
+/*:last-child yaitu memilih elemen terakhir dari sebuah parent{pembungkusnya)*/
+
+/*:nth-child(n) yaitu memilih elemen ke-n dari sebuah parent(elemen pembungkusnya)
+n bisa berarti urutan 1 2 atau pola (2n) (3n+2) (4n-1) atau ganjil dan genap(enen) dan (odd)*/
+
+/*contoh :first-child
+li:first-child a{
+    color: green;
+}*/
+
+/*contoh :last-child
+li:last-child a{
+    color: green;
+}*/
+
+/*contoh :nth-child() untuk urutan yang diinginkan*/
+/*bisa mengunakan kelipatan*/
+/*3n artinya kelipatan 3(3+3+3....dst)*/
+/*3n+1 artinya dimulai dari angka 4(4+4+4...dst)*/
+/*bisa juga menggunakan even untuk bilangan genap dan odd untuk bilangan ganjil*/
+li:nth-child(4) a{
+    color: green;
+}
+
+/*pseudo-class yang berhubungan dengan posisi elemen*/
+
+/*:first-of-type yaitu memilih elemen pertama dari sebuah jenis/tipe tag*/
+
+/*:last-of-type yaitu memilih element terakhir dari sebuah jenis/tipe tag*/
+
+/*:nth-last-of-type() yaitu memilih elemen dari urutan terakhir dari sebuah jenis/tipe tag*/
+
+/*contoh :first-of-type
+p:first-of-type{
+    color: green;
+}*/
+
+/*contoh :last-of-type
+p:last-of-type{
+    color:green;
+}*/
+
+/*contoh nth-last-of-type()*/
+p:nth-last-of-type(2){
+    color: green;
+}

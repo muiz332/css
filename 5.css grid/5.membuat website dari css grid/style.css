@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*style.css*/
+body{
+    background-color: #dddddd;
+    font-size: 18px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+.container{
+    display: grid;
+    row-gap: 10px;
+}
+
+/*header*/
+header{
+    display: grid;
+    grid-template-areas: 'hero hero feature-1'
+                         'hero hero feature-2';
+}
+.hero{
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(./muiz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.hero > *{ /*artinya cari apa saja yang ada didalam hero itu displaynya none*/
+    display: none;
+}
+
+.feature{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.feature-1{
+    grid-area: feature-1;
+    background-image: url(./27697779_cb391f1b-909c-422c-9821-cee889936ab1_1000_938.jpg);
+    background-size: cover;
+}
+.feature-2{
+    grid-area: feature-2;
+    background-image: url(./8042346_a75186f4-9f5d-4145-a473-9e7ee0441a0d.jpg);
+    background-size: cover;
+}
+.feature p, h2{
+    font-size: 2em;
+    font-weight: 200;
+}
+
+
+/*navigation*/
+nav{
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+nav .toko{
+    font-size: 25px;
+    color: #333333;
+}
+nav .menu-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 4px;
+}
+nav .menu-list li a{
+    display: block;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+/*menu toggle*/
+
+.menu-toggle{
+	justify-content: space-between;
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	position: relative;
+    z-index: 999;
+}
+.menu-toggle input{
+    top: -5px;
+    opacity: .0;
+	left: -24px;
+	position: absolute;
+	width: 70px;
+	height: 24px;
+	cursor: pointer;
+	z-index: 1;
+}
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	border-radius: 8px;
+	background-color: blue;
+	transition: all 1s;
+}
+
+.menu-toggle span:nth-child(2){
+	transform-origin: 0 0;
+}
+.menu-toggle span:last-child{
+	transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+	background-color: white;
+	transform: rotate(45deg) translate(-2px, -1px);
+}
+.menu-toggle input:checked ~ span:last-child{
+	transform: rotate(-45deg) translate(-1px, -1px);
+	background-color: white;
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+	transform: scale(0);
+	opacity: .0;
+}
+
+/*section*/
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+section .service{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+section .service .icon{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+section .service h5{
+    font-size: 25px;
+}
+section .service p{
+    line-height: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+/*image*/
+.image{
+    margin: 40px auto;
+    width: 80%;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.4);
+    gap: 4px;
+}
+.image img{
+    width: 100%;
+}
+.image h4{
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*scroll smooth*/
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/*resposive breakpoint*/
+/*responsive full XD*/
+@media screen and (max-width: 1024px){
+    nav{
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+    nav .toko{
+        display: none;
+    }
+    .hero > *{
+        display: block;
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+/*responsive tablet*/
+@media screen and (max-width: 768px){
+    nav{
+        order: -1;
+        justify-items: end;
+    }
+    nav ul.menu-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-toggle{
+        order: -1;
+        display: flex;
+    }
+    nav ul{
+		position: absolute;
+		top: 0;
+		flex-direction: column;
+		right: 0;
+		background-color: rgb(79, 79, 235);
+		height: 100vh;
+		align-items: center;
+		justify-content: space-evenly;
+		z-index: 1;
+		transform: translatey(-100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+	nav ul.slide{
+		transform: translatey(0px);
+		opacity: 1;
+	}
+}
+
+
+
+/*responsive mobile*/
+@media screen and (max-width: 600px){
+    header{
+        grid-template-areas: 'hero '
+                             'feature-1'
+                             'feature-2';
+    }
+
+}

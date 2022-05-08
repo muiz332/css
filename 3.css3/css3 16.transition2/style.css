@@ -1,0 +1,53 @@
+/*transition*/
+/*properti transition yaitu durasi, fungsi, delay*/
+/*sintax transition
+transition: durasi, fungsi, delay;*/
+
+/*sekarang yang kita bahas adalah fungsi */
+/*fungsi transisi ini disebut juga timing function, jadi pergerakan apa yang kalian lakukan pada saat menggunakan transition*/
+
+/*ada beberapa nilai yang bisa kalian berikan 
+-ease kalo kalian tidak memberikan nilai apa apa itu defaultnya adalah else
+-ease-in awalnya pelan makin lama makin ngebut
+-ease-out awalnya ngebut makin lama makin pelan
+-ease-in-out ngebut
+-linear 
+-cubic-bezier(w,x,y,z)
+*/
+/*nah kita bisa tambahkan transform kedalam transition contoh transition: transform 1s; , nah artinya kita transformnya /perputarannya itu ada transitionnya*/
+.container{
+    width: 900px;
+    margin: auto;
+    border: 1px solid;
+}
+.kotak{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    margin: 4px 0;
+    text-align: center;
+    line-height: 100px;
+}
+.kotak1{
+    transition: 1s ease;
+}
+.kotak2{
+    transition: 1s ease-in;
+}
+.kotak3{
+    transition: 1s ease-out;
+}
+.kotak4{
+    transition: 1s ease-in-out;
+}
+.kotak5{
+    transition: 1s linear;
+}
+.kotak6{
+    transition: all 1s cubic-bezier(0, 0, 0, 0);/*coba di inspect dibrowser*/
+}
+.container:hover .kotak{
+    transform: rotate(720deg);
+    margin-left: 800px;
+    color: red;
+}

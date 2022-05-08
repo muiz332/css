@@ -1,0 +1,14 @@
+/*properti dimensi itu ada dua yaitu width dan height*/
+.satu{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    overflow: auto;
+}
+/*nah maka yang terjadi adalah kontenya akan keluar karena tidak muat*/
+/*bagaimana cara kita mengatasinya kita gunakan overflow*/
+/*overflow memiliki 4 macam yaitu visible,auto,hidden,dan scroll*/
+/*visible yaitu jika ada konten yang keluar dari parentnya maka konten itu akan ditampilkan seperti defaultnya*/
+/*auto yaitu jika kontenya keluar dari parentnya maka konten itu akan ditampilkan dengan fitur scroll kebawah*/
+/*scroll yaitu jika konten itu melebihi parentnya maka konten yang akan tampil memiliki fitur scroll kebawah dan kesamping*/
+/*hidden yaitu jika kontennya keluar dari parentnya maka konten itu akan disembunyikan*/

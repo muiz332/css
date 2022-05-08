@@ -1,0 +1,28 @@
+div{
+    width: 200px;
+    height: 200px;
+    position: absolute;/*1 seperti yang kita tahu position absolute itu membuat sebuah elemen maju satu dimensi dan menghilangkan tempat sebelumnya (berada dibelakang)*/ 
+    /*maka akan terlihat muncul warna biru saja, lalu kenapa bisa begitu?*/
+
+}
+.satu{
+    background-color: red;
+    z-index: 1;/*8 kita berikan z-index maka elemen satu ini akan berada didepan karena elemen yang lain tidak mempunyai z-index*/
+}
+.dua{
+    background-color: green;
+    top:100px;
+    left: 100px;/*2maka akan terlihat tumpukan kotaknya yang warna merah berada dibelakang yang warna hijau berada ditengah yang warna biru berada di depan*/
+    /*3 nah kok bisa warna biru paling depan karena kita lihat tag htmlnya posisinya yang warna biru berada terakhir maka munculnya akan berada paling depan dan warna merah berada diawal maka akan muncul dibelakang*/
+    /*4tetapi ini akan menjadi sangat merepotkan ketika kita harus memindah mindahkan elemen html yang kita buat nah makanya kita akan menggunakan z-index*/
+
+    /*5 z-index itu bisa mengatur tumpukan dari elemen non static*/
+    /*6 caranya gampang sekali kita tinggal berika properti z-index: ; pada elemen yang ingin kita ubah posisinya, valuenya kita bisa berikan nilai angka semakin besar angkanya maka elemennya akan berada semakin depan*/
+
+    /*7 kalo sumbu x itu horizontal sumbu y itu vertikal maka zumbu z itu 3dimensi*/
+}
+.tiga{
+    background-color: blue;
+    top: 200px;
+    left: 200px;
+}

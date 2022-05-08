@@ -1,0 +1,34 @@
+/*order*/
+/*order untuk mengatur urutan dari elemen elemennya, ketika kita sudah punya elemennya dan kita ingin menukar posisinya tinggal tukar urutannya saja*/
+
+/*semuanya tadinya ordernya 0 tidak memiliki order*/
+
+.container{
+    width: 400px;
+    border: 4px solid;
+    margin: 30px auto;
+    display: flex;
+}
+.container div{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.836);
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 100px;
+}
+.container .satu{
+    order: 4;
+}
+.container .dua{
+    order: 2;
+}
+.container .tiga{
+    order: 3;
+}
+.container .empat{
+    order: 1;
+}
+/*cobain sendiri lah broo*/

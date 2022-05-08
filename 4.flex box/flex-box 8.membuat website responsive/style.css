@@ -1,0 +1,177 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+body{
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+nav{
+    padding: 20px 0;
+    display: flex;
+    background-color: rgb(79, 79, 235);
+    justify-content: space-around;
+}
+nav h1{
+    color: white;
+    font-weight: bold;
+	font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Sansita Swashed', cursive;
+	padding: 7px;
+}
+nav ul li a:hover{
+	border-radius: 5px;
+	background-color: rgb(87, 29, 223);
+}
+/*hamburger menu*/
+.menu-toggle{
+	justify-content: space-between;
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	position: relative;
+	background-color: black;
+}
+.menu-toggle input{
+	top: -5px;
+
+	left: -24px;
+	position: absolute;
+	width: 70px;
+	height: 24px;
+	cursor: pointer;
+	z-index: 2;
+}
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	border-radius: 8px;
+	background-color: white;
+	transition: all 1s;
+}
+
+/*hamburger menu animation*/
+/*nah sekarang gimana kalo kita ingin click checkboxnya maka span yang pertama akan berwarna merah?*/
+
+/*tinggal kita gunakan input:checked ~ span*/
+
+/*jadi ketika input yang ada didalam menu togle ini dichecklist maka cari css yang merupakan siblings atau sudara kandung, cari siblingsnya yang merupakan span yang dia anak ke dua*/
+/* ~ (siblings)*/
+/*.menu-togle input:checked ~ span:nth-child(2){
+	background-color: red;
+}
+*/
+/*kalo kita lihat properti transform itu porosnya ketka dirotate akan berada ditengah nah bagaimana jika saya ingin memindahkan porosnya ke ujung  kiri? ada yang namanya transform: origin: y x ; */
+
+.menu-toggle span:nth-child(2){
+	transform-origin: 0 0;
+}
+.menu-toggle span:last-child{
+	transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+	background-color: white;
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:last-child{
+	transform: rotate(-45deg) translate(-1px, -1px);
+	background-color: white;
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+	transform: scale(0);
+	opacity: .0;
+}
+
+
+
+
+
+/*responsive*/
+/*ukuran tablet*/
+
+@media screen and (max-width: 768px){
+	nav ul{
+		width: 50%; 
+	}
+
+}
+
+/*ukuran mobile*/
+@media screen and (max-width: 576px){
+	nav ul{
+		position: absolute;
+		top: 0;
+		flex-direction: column;
+		right: 0;
+		background-color: rgb(79, 79, 235);
+		height: 100vh;
+		align-items: center;
+		justify-content: space-evenly;
+		z-index: -2;
+		transform: translatex(100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+	.menu-toggle{
+		display: flex;
+	}/*lalu kita akan memunculkannya*/
+	nav ul.slide{
+		transform: translatex(0px);
+		opacity: 1;
+	}/*caranya gunakan js*/
+}

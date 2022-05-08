@@ -1,0 +1,31 @@
+/*backgorund-color berfungsi untuk mengatur warna pada background*/
+
+/*backgound-image berfungsi untuk mengatur gambar yang akan ditampilkan*/
+
+/*background-position berfungsi untuk mengatur posisi gambar pada background*/
+
+/*background-repeat berfungsi untuk mengatur jenis pengulangan gambar pada background*/
+
+/*contoh background-color*/
+/*
+body{
+    background-color: aqua;
+}*/
+
+/*contoh backgorund-image*/
+/*body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./imagesllll.jpg);
+}*/
+
+/*contoh background-position(top,center,bottom.left,center,right)*/
+/*body{
+    background-image: url(./images.jpg);
+    background-position: center;
+}*/
+
+/*contoh background-repeat*/
+body{
+    background-color: aqua;
+    background-image: url(./muiz.jpg);
+    background-repeat: repeat-y;
+}

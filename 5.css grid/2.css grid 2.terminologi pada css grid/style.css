@@ -1,0 +1,27 @@
+/*terminologi/istilah pada css grid*/
+/* ada beberapa istilah istilah yang harus kalian pahami dicss grid ini yaitu
+grid container
+grid item
+grid line
+gird cell
+grid area
+grid track
+grid gap
+*/
+/*saran gunakan browser fire fox untuk melihat elemen elemen html kita yang sudah dibuat menggunakan grid*/
+
+/*grid container adalah elemen pembungkus grid, didefinisikan dengan menuliskan 
+display: grid; dengan kita menuliskan display grid maka elemen tersebut menjadi grid containernya
+
+grid item adalah elemen elemen yang berada (1level) persis didalam grid container
+
+gird line adalah garis horizontal(kolom)
+atau vertikal (baris) yang memisahkan grid menjadi beberapa bagian ditandai dengan angka 
+
+grid cell adalah perpotongan / pertemuan antara baris dan kolom didalam grid
+
+grid area adalah kumpulan lebih dari satu grid cell yang membentuk kotak
+
+grid track adalah ukuran/jarak antara 2 grid line, bisa horizontal(kolom) atau vertika (baris)
+
+grid gap adalah jarak antara gird track/cell*/

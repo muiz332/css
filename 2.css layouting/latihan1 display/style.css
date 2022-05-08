@@ -1,0 +1,14 @@
+/*pada dasarnya tag div memiliki properti display block,sedangkan tag span memiliki properti inline*/
+
+
+
+.navigasi{
+    background-color: red;
+    
+}
+.main{
+    background-color: violet;
+}
+.main span{
+    background-color: green;
+}

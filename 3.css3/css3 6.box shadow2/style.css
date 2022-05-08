@@ -1,0 +1,56 @@
+/*box shadow*/
+/*selain value x-offsite, y offsite, blur, color ada lagi properti nya yaitu spread*/
+/*jadi urutannya x-offsite, y offsite, blur, spread, color*/
+/*spread digunakan untuk mengatur ukuran bayangannya*/
+
+/*div{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .75);
+    transition: .9s;
+}
+/*kalau ingin jelas kita buka file dibrowsernya lalu kita klik kanan klik inspect lalu silahkan anda mencobanya sendiri*/
+/*div:hover{
+    box-shadow: -4px 5px 10px 10px rgba(0, 0, 0, .75);
+}
+
+/*selanjutnya value inset*/
+/*jadi urutannya inset, x-offsite, y offsite, blur, spread, color*/
+/*value inset ini bisa kita kasih atau tidak*/
+/*inset akan membuat bayangan berada didalam kotaknya*/
+
+/*div{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, .75);
+}
+/*maka bayanganya akan pindah didalam elemennya*/
+
+/*selanjutnya multiple shadow*/
+/*kita bisa memberikan lebih dari satu bayangan pada sebuah elemen*/
+/*kita bisa menambahkan koma dibelakang rgba*/
+/*div{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    box-shadow: 5px 5px 10px  rgba(255, 0, 0, .5), 
+    -5px -5px 10px rgba(0, 0, 255, .5);
+}
+/*nah dengan ini kalian bisa menciptakan efek yang menarik*/
+/*misalkan kalian bisa kasih multiple border*/
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, .5),
+    0px 0px 0px 10px rgba(0, 0, 255, .5);
+    border-radius: 50%;
+}
+/*kalian bisa menambahnya lagi sesuai selera tinggal tambahkan koma dibelakang rgba saja kalau ingin menambah bordernya lagi*/

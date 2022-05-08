@@ -1,0 +1,206 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*style*/
+body{
+    background-image: url(./email-pattern.png);
+}
+.topbar{
+    background-color: #3a7cba;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 60px;
+    z-index: 9999;
+}
+.topbar h4{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 8px;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 80px;
+    position: relative;
+    background-color: white;
+}
+.facebook{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    top: 0px;
+}
+.header{
+    padding: 15px;
+    font-family: arial;
+    background-color: white;
+}
+.header .judul{
+    font-size: 30px;
+    font-weight: bold;
+}
+.header ul{
+    margin-top: 20px;
+}
+.header ul li{
+    display: inline-block;
+    margin-right: 4px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: green;
+    padding: 4px;
+}
+.header ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.hero{
+    background-image: url(./progamming.png);
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -190px;
+}
+.main{
+    background-color: white;
+    padding: 10px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+}
+.main h2{
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .penulis{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.main .penulis a{
+    text-decoration: none;
+    color: salmon;
+}
+.main .berikut{
+    margin-top: 20px;
+}
+.main .indent{
+    text-indent: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    word-spacing: 4px;
+}
+.main .akhir{
+    margin-left: 15px;
+}
+.main em{
+    font-style: italic;
+}
+.main b{
+    font-weight: bold;
+}
+
+.sidebar{
+    width: 320px;
+    float: right;
+}
+.sidebar h3{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.sidebar img{
+    width: 70px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+.sidebar p{
+    line-height: 20px;
+}
+
+.footer{
+    padding: 20px;
+    background-color: #3a7cba;
+}
+.footer .copy{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

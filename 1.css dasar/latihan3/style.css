@@ -1,0 +1,69 @@
+/*komentar pada css*/
+/* belajar text styling Css*/
+
+/* color berfungsi memberi warna pada tulisan*/
+
+/* text-align berfungsi mengatur format paragraf*/
+
+/*text-indent berfungsi memberi indentasi pada paragraf/text*/
+
+/*text decoration berfungsi mengatur dekorasi pada text*/
+
+/*text-transform berfungsi mengubah jenis huruf menjadi huruf besar,kecil/kapital*/
+
+/*letter-spacing berfungsi untuk mengatur jarak antar huruf*/
+
+/*word-spacing berfungsi mengatur spasi antar kata*/
+
+/*tipe warna buka dibuku catatan*/
+
+/*contoh color*/
+h1{
+    color: green;
+}
+
+/*contoh text-align*/
+h2{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+/*contoh text-indent*/
+h3{
+    color: greenyellow;
+}
+.indent{
+    text-indent: 200px
+}
+
+/*contoh text-decoration*/
+h4{
+    font-size: 20px;
+}
+.decoration{
+    text-decoration: underline;
+}
+
+/*contoh text-transform*/
+
+h5{
+    font-size: 30px;
+}
+.transform{
+    text-transform: uppercase;
+}
+
+/*contoh letter-spacing*/
+h6{
+    font-size: 40px;
+}
+.letter{
+    letter-spacing: 3px;
+}
+
+/*contoh word-spacing*/
+.word{
+    word-spacing: 7px;
+}

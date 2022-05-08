@@ -1,0 +1,40 @@
+body{
+    font-family: arial;
+}
+/*
+h1{
+    color: green;
+}
+h2{
+    color: green;
+}*/
+
+/*jika kita ingin mengubah 2 elemen maka gunakan koma(,) yang berarti dan
+contoh*/
+h1,h2{
+    color: green;   
+}
+h2{
+    font-style: italic;
+}
+/*Css tolong ubah warna dan decorationnya blue dan none didalam tag a didalam tag li didalam tag ul*/
+/*tanda spasi pada css berarti didalam*/
+/*bisa juga ketika menggunakan 2 kata pada id/class*/
+/*pada paragraf p */
+/*contoh class="aku kamu"*/
+/*maka ditulis 
+p.kamu*/
+ul li a{
+    text-decoration: none;
+    color: blue;
+}
+ol li a{
+    text-decoration: none;
+    color: black;
+}
+#red{
+    color: red;
+}
+.violet{
+    color: violet;
+}

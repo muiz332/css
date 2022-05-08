@@ -1,0 +1,95 @@
+/*position absolute fixed*/
+
+/* div{
+    width: 200px;
+    height: 200px;
+} */
+
+/*contoh position absolute
+.satu{
+    background-color: red;
+}
+.dua{
+    background-color: green;
+    position: absolute;
+    left: 40px;/*jika kita berikan left baru kita bisa lihat yang dibelakangnya ada kotak biru
+}
+.tiga{
+    background-color: blue;
+}
+/*maka jika kita kasih position absolute pada warna green maka kotak yang warna blue akan hilang, sebenarnya tidak hilang akan tetapi kota yang warna biru tersebut berada dibelakang kotak warna merah, nah kok bisa? nah yang terjadi sebenarnya kalo kita lihat secara 3dimensi kotak yang warna green itu naik 1 dimensi(satu langkah) sama seperti relativ akan tetapi kotak warna biru naik mengisi tempat kotak green sebelumnya*/
+/*konsep absolute*/
+/*kalo secara teorinya ketika kita menggerkakan elemen dengan posisi absolute(mwnggunakan properti top,left,bottom,dan right) ruang yang ditempati oleh elemen tersebut dianggap tidak ada*/
+/*ketika kita menggerakkan elemen dengan posisi absolute,elemen akan bergerak relatif terhadap posisi dari elemen parentnya (pembungkusnya). jika kita lihat elemen div tidak mempunyai parent selain body*/
+/*selama elemen parent terdekatnya memiliki posisi yang juga non static*/
+
+
+/*contoh jika ada pembungkusnya*/
+/*
+.satu, .dua, .tiga{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.container{
+    width: 700px;
+    height: 700px;
+    border: 10px solid;
+    margin: auto;
+}
+.satu{
+    background-color: red;
+}
+.dua{
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;/*jika kita kasih top dan leftnya 0 harusnya kotak warna green akan berada dipojok kiri atas karena parent dari kotak warna hijau adalah container*/
+    /*nah ternyata kotak warna hijau tetap keluar dari containernya kira kira kenapa ya?*/
+    /*kalo kita lihat secara 3dimensi lagi warna hijau tetap keluar kenapa? jadi gini walaupun kita kasih container,containernya itu beda dimensi dengan kotak warna hijau karena kotak warna hijau juga maju 1 dimensi jadi parentnya kotak hijau adalah body jadi kotak hijau akan berada di kiri pojok atas*/
+    /*nah supaya kotak hijau nyangkut dicontainer yang harus dilakukan adalah kita harus membuat sicontainer ini berada didimensi yang sama dengan kotak warna hijau,nah disini lah kita membutuhkan position relatif untuk mengubah dimensi container agar sama dengan kotak warna hijau*/
+    /*sehingga logikanya containernya akan naik 1dimensi(satu langkah) jadi kotak yang hijaunya jika kita kasih top dan left 0 maka dia akan berada dikiri pojok atas didalam containernya 
+}
+.tiga{
+    background-color: blue;
+}
+/*
+
+
+
+/*position fixed*/
+
+
+.satu, .dua, .tiga{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.container{
+    width: 700px;
+    height: 700px;
+    border: 10px solid;
+    margin: auto;
+}
+.satu{
+    background-color: red;
+}
+.dua{
+    background-color: green;
+    position: fixed;/*nah jika kita kasih position fixed maka dia akan pindah diwindow kiri pojok atas*/
+    top: 0;
+    left: 0;
+}
+.tiga{
+    background-color: blue;
+}
+
+
+/*prilaku dari elemen fixed*/
+/*ketika kita menggerakkan elemen tersebut menggunakan top,left,bottom,dan right maka dia akan bergerak relatif terhadap window browser. jadi dia tidak akan mempedulikan elemen parentnya meskipun parentnya non static*/
+/* ketika kita elemen yang diberikan position fixed akan terkunci pada posisi tersebut*/
+
+
+
+
+

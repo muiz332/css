@@ -1,0 +1,16 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+/*kalo kalian liat sisi atas dan kiri mempunyai jarak padahal kita tidak mengatur jarak tersebut(margin)*/
+/*itu terjadi karena banyak elemen html yang secara default sudah memiliki margin dan padding sendiri*/
+/*nah bagaimana cara mengatasinya */
+/*caranya dibawah ini*/
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+/*cara ini kurang efektif*/
+/*ada cara yang lebih efektif yaitu google aja css reset lalu copykan semuanya dan pastekan di css kita*/
+/*lalu tuliskan sintax css kalian*/

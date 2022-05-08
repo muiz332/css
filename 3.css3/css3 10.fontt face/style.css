@@ -1,0 +1,26 @@
+/*font-face*/
+/*font-face digunakan untuk mengelola font pada css kita*/
+/*lalu kenapa kok dikelola dicss3? padahal css1pun juga bisa mengelola font */
+
+/*kita bisa menggunakan https:www.font-google.com untuk membuat font agar lebih berfariasi syaratnya user harus terkoneksi internet dan jangan lupa dilihat licensinya berbayar atau tidak*/
+/*lalu bagaimana jika font digooglefont tidak cukup memenuhi kebutuhan kalian maka gunakan @font-face*/
+
+/*nah cara menggunakanya itu bagaimana*/
+/*sintaxnya*/
+/*@font-face{
+    font-family: nama font tersebut;
+    src: url(masukkan fontnnya);
+}
+
+nah lalu bagaimana cara mendapatkan fotnnya? nah  kita gunakan layanan fontsqueirell.com*/
+/*caranya kalian tinggal download aja fontnya dan juga perhatika font tersebut support atau tidak untuk website jika ada gambar bola itu support lalu taruh difolder html kita lalu gunakan @font-face*/
+/*gunakan ttfcara ngakalin, woff untuk website*/
+/*setelah itu kita masukkan difont-family*/
+@font-face{
+    font-family: "Alex Brush";/*kita namai sesuai nama fontnnya*/
+    src: url('AlexBrush-Regular.ttf') format('truetype');
+}
+/*nah jika sudah lalu kita panggil fontnya menggunakan font-family*/
+h1{
+    font-family: "Alex Brush", arial;/*folback(cadangan)nya arial*/
+}

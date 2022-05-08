@@ -1,0 +1,27 @@
+/*align-self*/
+/*align-self berfungsi untuk mengatur satu elemen/items didalam barisnya yang mau kalian posisikan dimana*/
+/*mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis*/
+
+/*sintax
+align-self: auto flex-start/end center  baseline stratch;*/
+/*kalo gk jalan kasih tingginya dicontainernya*/
+.container{
+    width: 400px;
+    height: 140px;
+    border: 4px solid;
+    margin: 30px auto;
+    display: flex;
+}
+.container div{
+    width: 100px;
+    flex: 1;
+    background-color: rgba(0, 0, 255, 0.836);
+    margin: 4px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.container div.dua{
+    align-self: stretch;
+    flex-grow: 3;
+}

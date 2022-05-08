@@ -1,0 +1,180 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*explincit dan implincit grid*/
+/*explincit itu ketika kita secara jelas menuliskan ukuran dari gridnya kolm dan barisnya
+sedangkan implincit adalah ketika grid nya menentukan secara otomatis sisanya dari colomn dan baris yang kita tidak tentukan secara explincit*/
+/*contohnya*/
+
+/*.container{
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 70px 70px;
+}
+.container .item{
+    background-color: aqua;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item:nth-child(even){
+    background-color: salmon;
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}
+/*kalo kita inspect akan muncul 3 garis
+yang pertama adalah garis yang solid ini untuk menentukan explincit gridnya jadi grid ini berawal dan berakhir dimana? semuanya, pembungkusnya nanti kita lihat kalau misalnya ada yang explincit grid
+
+yang kedua ada garis putus putus secara vertikal ini kita sebut dengan explicit item atau explincit track jadi yang kita tulis didalam colomn atau rows itu dia menjadi explincit itemnya
+
+yang ketiga ada garis titik titik dia adalah implincit items atau implincit treck */
+
+/*kalo kita lihat secara explincit itu kita tentukan 100px dan 200px makanya itu ditengah tengah darisnya putus putus, nah lihat pada rownya(barisnya) kita tidak tentukan maka garisnya akann titik titik atau implincit(ditentukan oleh gridnya)*/
+
+/*dan coba sekarang kalian atur rowsnya secara explincit maka garisnya akan putus putus*/
+
+/*saya hanya mengatur 2 baris jadi baris yang kita tidak atur maka dia akan implincit atau gridnya yang menentukan ukurannya secara otomatis maka garisnya akan terlihat titik titik*/
+
+
+/*nah sekarang gimana caranya kita mengatur ukuran dari items yang implincit? nah caranya kita bisa pakek satu properti lagi yang namanya auto colomns dan auto rows, jadi dia yang menangani jika ada items yang impincit
+jadi kalian tinggan tuliskan perintah tersebut yang bertujuan untuk mengatur ukuran grid track yang tidak dituliskan pada grid-temlate(implincit track
+sintaxnya 
+grid-auto-row/colomn: track-size;*/
+/*.container{
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 70px 70px;
+    grid-auto-rows: 100px;
+}
+.container .item{
+    background-color: aqua;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item:nth-child(even){
+    background-color: salmon;
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+/*nah kalo kita lihat kita tidak punya colom implincit karena jika ada colom yang lebih maka dia akan turun kebawah  menjadi baris sedangkan kita punya properti grid-auto-colomns yang berfungsi untuk mengatur colomns yang implincit lalu bagaimana jika ada kolom yang implincit?
+ kita punya lagi propert yang namanya auto flow 
+ auto flow berfungsi untuk mengatur penempatan items/cell pada grid track termasuk yang ditulis secara implincit
+
+ sintax
+ gird-auto-flow: row/colomn/row dense/colomn dense ;
+
+ nah kalo misalkan kalian tahu flex-box itu ada properti dicontainer yang namanya flex-direction bisa secara horizontal dan kebalikannya atau bisa secara vertikal dan kebalikannya
+
+ nah kalo kita lihat maka 1 lalu 2 terus turun tetapi saya ingin kebalikannya saya ingin dia jadi baris(1 dan 2)*/
+
+ .container{
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100px auto 20px;
+    grid-auto-flow: column ;/*nah baru kita bisa atur disini untuk implicitnya*/
+   /*grid-auto-columns: 100px;
+   /*grid-template-rows: 30px 20px 20px;*/
+}
+.container .item{
+    background-color: aqua;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item:nth-child(even){
+    background-color: salmon;
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*yang selanjutnya ada grid value yaitu nilai apa saja yang diberikan
+nah yang belum kita coba adalah fr(fraction) dan line-name, untuk line name ini adalah nama yang bisa diberika pada track lalu cara menulisnya bagaimanan?
+contoh
+grid-template-column: [colom-1] 20px [colom-2] 40px [kolom-3] 70px;
+grid-template-rows: [baris-1] 20px [baris-2] 30px [baris-3] 40px;
+line-name hanya untuk menandai garisnya yang tadinya 1 dan 2 bisa kita panggil kolom-1 dan kolom-2
+
+nah nanti ini manggilnya gampang kalo kita udah bicara tentang grid items nanti kita bilang "items nomor 1 itu mulai dari kolom-1 sampai kolom-3 nah jadi tidak perlu pakai angka lagi tetapi pakai nama/kata-katanya nanti kita akan coba setelah kita masuk ke grid items
+
+nah selanjutnya yang bisa kita pakai adalah fr(fraction) ini kepakai apa lagi kalo kita mau bikin websitenya responsive, biasanya kita mengaturnya pakai persen kalo pakek persen ribet mtknya misalkan saya punya lebar 100% mau bikin 3 kolom yang ukurannya sama,3 kolom yang ukurannya sama itukan kita kasinya 33.33333% ribet juga dan kalau misalkan kita mau nambah kolom presentase tadi harus dihitung ulang ribet nah kalo pakek fraction semuanya akan dihitung oleh css grid*/
+/* 
+.container{
+    width: 60%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70px 70px;
+}
+.container .item{
+    background-color: aqua;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item:nth-child(even){
+    background-color: salmon;
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}*/

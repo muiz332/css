@@ -1,0 +1,46 @@
+/*sama dengan transition animation juga memungkinkan kita dapat merubah nilai tag html secara halus tetapi transtion mempunyai 2 keadaan, keadaan awal dan keadaan akhir, tetapi animation mempunya lebih dari 2 keadaan*/
+/*kita bisa tulis satu persatu*/
+
+
+
+/*sintax lengkap animation
+animation: nama, durasi, timing function, delay, iteration-count, direction, fill mode, play-state*/
+
+/*iteration-count yaitu mau berapa kali mengulangnya, kita bisa kasih angka atau infiniti(tidak terbatas)
+
+diretion(darimana mulainya, nilainya kita bisa kasih norma untuk defaultnya, reverse untuk mulai dari belakang, alternate(mulai dari awal sampai akhir dan dari akhir sampai awal), alternate-reverse(mulai dari akhir awal)
+
+fill-mode yaitu untuk menentukan akhir dari animasinya seperti apa, nilainya forwards(akan berhenti), backwards, both
+
+play-state jadi defaultnya adalah running(berjalan semestinya) dan paused(animasinya tidak akan berjalan) kalo kita ingin menghentikan ditengah tengah kita gunakan javasript*/
+
+/*kalo hanya 2 keadaan bisa gunakan from dan to tetapi saat banyak keadaan bisa gunakan angka%*/
+.kotak{
+    background-color: salmon;
+    width: 200px;
+    height: 200px;
+
+}
+.kotak:hover{
+    animation-name: kotak;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kotak{
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+    50%{
+        width: 500px;
+        height: 200px;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+    }
+}

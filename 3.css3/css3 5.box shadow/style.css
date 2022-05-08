@@ -1,0 +1,16 @@
+/*box shadow */
+/*box shadow adalah properti css3 yang digunakan untuk membuat bayangan pada elemen yang kita buat*/
+/*propertinya adalah box-shadow lalu value yang bisa kalian kasih yaitu ada 4 parameter (x-offsite, y-offsite, blur, color) ini adalah value wajib*/
+
+/*x-offsite yaitu untuk mengatur jarak bayangan pada sumbu horizontal jika kita kasih nilainya 10px maka bayngan akan bergerak ke kanan jika kita kasih nilainya -10 maka bayanganya akan bergerak kekiri*/
+
+/*y-offsite yaitu untuk mengatur jarak bayangan pada sumbu vertikal*/
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .75);
+}
+/*catatan jika kita ingin mengatur sebaiknya kita atur diinspeknya lalu copy dan pastekan ke sini*/

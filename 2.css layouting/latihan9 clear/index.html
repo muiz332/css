@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset=utf-8>
+    <title>clear Css layouting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container cf">
+       <img src="laptop3.png" alt=""><!--12 kita tahu img sudah kita kasih float berati kita harus menghentikannya tinggal kalian tentukan dimana kalian akan memberhentikan floatnya,coba kita tambahkan diakhir-->
+       
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime
+        </p>
+        <!--1 nah jika kita lihat tidak ada masalah-->
+        <!--2 tapi ini akan adi masalah ketika textnya lebih sedikit dari tinggi gambarnya-->
+        <!-- 3jika kita lihat maka yang terjadi ketika textnya lebih sedikit dari tinggi gambarnya maka containernya akan runtuh karena dia tidak menganggap ada gambar-->
+        <!-- 4nah cara mengatasinya itu ada beberapa cara -->
+        <!--bisa menggunakan properti overflow-->
+        <!--bisa menggunakan div kosong-->
+        <!--bisa menggunakan teknik micro clearfix-->
+        <!--<div class="clear"></div>-->
+        <!--14 nah maka tulisannya akan berada di kanan tetapi kotaknya tidak runtuh-->
+    </div>
+</body>
+</html>

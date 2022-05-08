@@ -1,0 +1,56 @@
+/*radial-gradiant*/
+/*radial-gradian yaitu membuat gradiasi warna secara melingkar*/
+/*sama dengan linear-gradien, radial-gradien bukan property css3 melainkan value dari background-image/background*/
+
+/*sintax sederhananya */
+/*background-image: radial-gradient(warna awal, warna akhir*/
+
+/*radial-gradient juga bisa membuat multiple warna*/
+/*radial-gradient juda bisa membuat suatu warna lebih banyak daripada yang lainnya yaitu menggunakan color stop yang berada setelah warna itu*/
+
+
+/*div{
+    background-image: radial-gradient( rgba(255, 0, 0)10%, rgba(0, 255, 0)20%, rgba(0, 0, 255)30%);
+    width: 400px;
+    height: 200px;
+    margin: 80px auto;
+}
+
+/*sintax lengkap radial-gradient*/
+/*radial-gradient(tipe, jangkauan, at posisi-y, posisi-x, warna satu, warna dua)*/
+/*untuk tipe ada dua bisa ellipse(defaultnya, bisa circle*/
+/*lalu kita bisa kasih jangkauan maksutnya adalah jangkauan dari gradiasi warnanya*/
+/*lalu kita juga bisa tentukan posisi dari pusat gradiasinya menggunakan keyword at lalu gunakan posisi- y,posisi-x*/
+
+
+/*contoh circle
+div{
+    background-image: radial-gradient(circle, rgba(255, 0, 0)10%, rgba(0, 255, 0)20%, rgba(0, 0, 255)30%);
+    width: 400px;
+    height: 200px;
+    margin: 80px auto;
+}
+/*kalo kita kasih circle maka dia akan berbentuk lingkarang*/
+
+/*contoh jangkauan*/
+/*jangkauan yaitu jarak dari pusat gradient ke sisi terluarnya*/
+/*valuenya ada 4 yaitu
+closest-corner yaitu jarak dari pusat gradient ke sudut terdekat elemen
+closest-side yaitu jarak dari pusat gradient kesisi terdekat elemen
+farhthest-corner yaitu jarak dari pusat gradient ke sudut terjauh elemen
+farthest-side yaitu jarak dari pusat gradient ke sisi terjauh elemen
+div{
+    background-image: radial-gradient(circle closest-side, red,green);
+    width: 400px;
+    height: 200px;
+    margin: 80px auto;
+}
+
+/*contoh posisi at posisi-y, posisi-x*/
+/*untuk y kita bisa kasih top center bottom px, untuk x kita bisa kasih left center right px,*/
+div{
+    background-image: radial-gradient(circle farthest-side at top left, red,blue);/*jadi sekarang pusat lingkarannya ada disebelah atas kiri*/
+    width: 400px;
+    height: 200px;
+    margin: 80px auto;
+}

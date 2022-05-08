@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css grid*/
+/*apa itu css grid? 
+css grid yaitu module css *baru*  untuk mendefinisikan sistem layoute(tata letak) berbentuk grid dalam 2 dimensi(baris dan kolom) 
+kalo flex-box itu satu dimensi dia hanya bisa mengatur baris saja atau kolom saja sedangkan css grid bisa mengatur baris sekaligus kolom*/
+
+/*lalu bagaimana cara memakainya?
+yang pasti untuk menjalankan css grid ini simple aja kita butuh properti css yaitu display: grid; didalam containernya sama seperti flex-box*/
+
+/* dan alasan kenapa kita menggunakan css grid kita akan lihat ya kenapa kita tidak pakai flex-box saja? jadi css grid ini bukan merupakan pengganti dari flex-box walaupun secara konsep css grid lebih komplex ya tapi dia bukan pengganti flex-box bahkan nanti kedepannya kita bisa menggunakannya secara bersamaan antara css grid dan flex-box karena tujuannya berbeda css grid untuk membuat layout yang lebih komplex, ya nanti ada saatnya kita bisa menggabungkan sebuah elemen itu kita set displaynya jadi grid lalu elemen didalamnya misalnya kita set displaynya jadi flex*/
+
+/*jadi singkatnya css grid adalah cara kita untuk melayout sebuah halaman yang bisa kita atur baris dan kolomnya sekaligus karena dia dua dimensi*/
+
+.container{
+    width: 800px;
+    padding: 10px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border: 4px solid;
+}
+.container header{
+    padding: 20px;
+    background-color: #663399;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .kiri{
+    float: left;
+    width: 300px;
+    height: 400px;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+.container .kiri aside{
+    height: 100px;
+    line-height: 100px;
+    background-color: blue;
+}
+.container .kiri nav{
+    height: 300px;
+    background-color: red;
+    line-height: 300px;
+}
+.container .kanan{
+    box-sizing: border-box;
+    float: right;
+    width: 472px;
+    height: 400px;
+}
+.container .kanan main{
+    height: 400px;
+    background-color: brown;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 400px;
+    text-align: center;
+    color: white;
+}
+footer{
+    padding: 20px;
+    background-color: rgb(65, 61, 61);
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

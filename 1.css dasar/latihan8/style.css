@@ -1,0 +1,50 @@
+/*jika kita mempunyai 1 paragraf dan kita berikan 2 css maka yang akan muncul bagian terakhir karena bagian pertama ditimpa oleh bagian kedua*/
+/*contoh*/
+/*p{
+    color: green;
+
+}
+p{
+    color: blue;
+} */
+/*maka yang muncul adalah warna biru*/
+
+/*jika kita mempunyai 1 paragraf didalam paragraf ada selector id kemudian kita berikan css p dan nama id tersebut maka yang muncul adalah yang nama id tadi karena id nilainya lebih besar dibanding dengan selector tag html*/
+/*contoh*/
+
+#muiz{
+    color: green;
+}
+p{
+    color: red;
+}
+
+/*contoh*/
+/*id   class  tag html*/
+
+
+/*ul#sarapan li{        /*id     class   tag html
+    color:green;   /* 1        0         2   
+}                
+                    /*            VS          
+
+.favorit{           /*id     class    tag html
+    color: red;  /* 0       1         0      
+}*/
+
+/*pasti udah ketauan warna yang akan muncul apa?
+ya benar warna yang akan muncul yaitu green*/
+/*karena id lebih berat nilainya daripada class*/
+
+/* nah bagaimana jika kita ingin mewarnai nasi goreng menjadi merah*/
+/*kita bisa tambahkan beratnya contoh*/
+
+ul#sarapan li{      /*id   class   tag html*/
+    color: green;/* 1      0        2    */
+}
+
+ul#sarapan li.favorit{ /*id  class  tag html*/
+    color: red;     /* 1     1       2    */
+}
+
+/*nah jika kita hitung maka nilainya lebih berat yang ke 2 otomatis yang muncul adalah warna nasi goreng akan berubah menjadi red sedangkan yang lainya akan berubah menjadi hijau*/

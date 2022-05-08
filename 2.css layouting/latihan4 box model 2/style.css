@@ -1,0 +1,113 @@
+/*contoh overlopping margin vertikal
+.satu{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+}
+.dua{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    margin-top: 80px; /*jika anda menambahkan lagi margin-top maka tidak akan mempengaruhinya karena yang dihitung yang lebih banyak nilainya inilah yang dinamakan overlopping margin untuk elemen vertikal
+}
+.tiga{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 60px;
+}
+/*div{
+    display: inline-block;
+}
+.satu{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.dua{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+  
+}
+.tiga{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}*/
+/*maka yang akan muncul kontennya sejajar tapi ada jaraknya padahal kita tidak menggunakan margin kenapa? ini karena efek kita menguunakan inline-block.kita tidak bisa menghilangkan jarak pada margin: 0; tetapi kita bisa menambahkannya*/
+/*cara mengatasinya adalah dengan menghilangkan spasi antar div pada tag htmlnya*/
+/*jadi div satu dengan yang lain dibuat menyatu*/
+
+/*contoh overflopping margin horizontal
+div{
+    display: inline-block;
+}
+
+.satu{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-right: 40px;
+}
+.dua{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-left: 40px ;/*jika anda menambahkan margin-lef maka dia akan ditambah dengan margin sebelumnya(margin-right)
+ 
+}
+.tiga{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}*/
+
+/*contoh negatif margin
+.satu{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-bottom: 30px;
+}
+.dua{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+   margin-top: -20px; /*jika kita menambahkan nilai margin dengan nilai negatif maka dia akan mengurangi margin yang pertama(30-20=10px)
+}
+.tiga{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}*/
+
+/*contoh auto*/
+.satu{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;/*jika menggunakan auto anda harus menambahkan kedua sisi yaitu kiri kanan dan atas bawah*/
+    /*maka dia akan berada ditengah karena parentnya body*/
+}
+.dua{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tiga{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+}/*maka semua akan berada ditengah*/

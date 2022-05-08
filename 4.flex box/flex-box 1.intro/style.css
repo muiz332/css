@@ -1,0 +1,14 @@
+/*Flex-box atau flexible box module
+flex box digunakan untuk membantu kita dalam melayout atau mengatur posisi sebuah halaman website*/
+
+/*definisi flexb box adalah model layout 1 dimensi yang dapat mengatur jarak dan penjajaran antar item dalam sebuah container
+
+nah lalu maksutnya apa 1 dimensi? 
+yaitu hanya dapat mengatur 1 dimensi maksutnya adalah kita hanya dapat mengatur elemen elemen secara horizontal dalam satu baris atau secara vertikal dalam satu kolom jadi tidak bisa dua duanya sekaligus itu kenapa disebut satu dimensi,pada saat tertentu, antara baris atau kolom, tidak bisa keduanya sekaligus
+
+nah ada teknik css yang dapat mengatur keduanya sekaligus jadi 2 dimensi sekaligus itu disebut dengan css grid yang akan dibahas nanti setelah flex box
+*/
+
+/*definisi  lain flex box layuot module adalah sebuah module yang menawarkan cara yang efektif untuk menyusun, mensejajarkan, dan mendistribusikan jarak antar item didalam sebuah container, meskipun ukurannya dinamis atau bahkan kita tidak tau.
+
+istilah istilah pada flex box difolder selanjutnya*/

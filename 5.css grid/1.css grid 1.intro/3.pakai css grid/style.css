@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style.css*/
+.container{
+    width: 800px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    display: grid;/*jadi kita kasih tau bahwa elemen didalamnya akan berubah menjadi grid*/
+    /*nah sekarang kita bisa dengan mudah kasih tau bagian mana sebagai apa namanya bagian mana sebagai apa*/
+    /*didalam containernya itu dibagi mejadi 2 bagian horizontal dan 4 bagian secara vertikan atau kolom*/
+    /*anggap saja tulisan ini adalah kotaknya jadi dia ada dua bagian dan empat baris*/
+    grid-template-areas: "header header"
+                        "aside main"
+                        "nav main"
+                        "footer footer";/*nah disini kita berikan nama sesuai nama yang kita inginkan*/
+    /*nah kan sisi kiri lebih kecil dari pada sisi kanan kita kasih saja 1fr untuk sisi kiri dan 1.5fr untuk sisi kanan*/
+    grid-template-columns: 1fr 1.5fr; /*untuk megatur ukuran dari kolomnya (horizontal)*/
+    grid-template-rows: 1fr 1fr 1.3fr ; /*untul mengatur barisny (vertikal*/
+    /*nah hasilnya masih agak aneh y karena kita belum kasih tau yang header yang mana yang aside yang mana dll nah sekarang kita tinggal kasih tau aja nih caranya ditiap tiap itemnya yang ada didalam containernya */
+}
+header{
+    grid-area: header; /* kita kasih nama grid area jadi dia areanya yang header*/
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    grid-area: nav;
+    padding: 20px ;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    grid-area: aside;
+    padding: 40px ;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    grid-area: main;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(66, 63, 63);
+}
+
+/*dan selain dengan pengaturan yang mudah ini nanti juga kita akan lebih mudah bisa mengatur responsivenya website kita jadi kalo kita ingin pindahkan elemennya tinggal kita pindahkan namanya 
+
+sampai disini pembahasan kita, kita lanjutkan dinext video, saya Muhammad Mu'izzuddin salam titik koma*/

@@ -1,0 +1,39 @@
+/*vendor prefix*/
+/*vendor prefix yaitu sintax khusus yang harus ditambahkan untuk beberapa properti css3*/
+/*jadi nanti ada beberapa properti dicss3 yang tidak akan jalan disemua browser, nah supaya jalan kita akalin menggunakan vendor prefix*/
+/*sintax spesifik untuk setiap browser/vendor*/
+/*tiap tiap browser itu berbeda sehingga setiap penanganannya itu juga berbeda*/
+
+/*prefix / awalan, nah jadi kita akan menambahkan awalan pada properti css3 yang belum disupport oleh browser tertentu sedangkan verdor adalah browser yang bersangkutan*/
+
+/*lalu bagaimana cara menambahkan prefix / awalan katanya?*/
+/*caranya
+-webkit-<properti css3>
+-moz-<properti css3>
+-ms-<properti css3>
+-o-<properti css3>
+
+lalu kenapa kita harus menambahkan prefixes tersebut? karena tidak semua browser support css3!*/
+
+/*vendor prefix
+-webkit-(crome, safari, opera versi terbaru)
+-moz-(firefox)
+-ms-(internet exploler)
+-o-(opera versi terdahulu)
+*/
+
+body{
+    text-align: center;
+}
+img{
+    filter: grayscale(100%);/*kalo dulu filter ini belum support jadi diawalan kata filter/prefix kita tambahkan webkit untuk browsernya agar support*/
+    /*-webkit-filter: grayscale(100%)*/
+
+    /*kalo sekarang ya sudah support dong*/
+
+    /*nah filter ini khsusunyanya digunakan untuk gambar penjelasan lebih detilnya lagi ada di next materi*/
+    height: 200px;
+    
+}
+/*nah itu tadi penggunakan vendor prefix sangat simple*/
+/*lalu properti css3 apa saja yang butuh vendor prefix? nah silahkan kunjungi website shouldiprefix.com, caniuse.com,pleeease.io/play*/

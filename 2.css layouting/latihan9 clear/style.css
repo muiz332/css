@@ -1,0 +1,77 @@
+/*.container{
+    border: 1px solid;
+    width: 800px;
+    margin: auto;
+}
+.satu{
+    width: 150px;
+    height: 500px;
+    background-color: aqua;
+    float: left;
+}
+.dua{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    float: left;
+}
+.tiga{
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+    float: left;
+}*/
+/*.container{
+    width: 700px;
+    border: 1px solid;
+    margin: auto;
+    padding: 4px;/*5untuk overflow kita bisa menambahkanya dicontainer
+    overflow: auto; /*6artinya containernya akan menyasuaikan tinggi dari kontennya*/
+    /*7nah jadi gambarnya akan dianggap lagi*/
+    /*8tetapi ini bukan solusi yang paling tepat tetapi ini cara curangnya karena solusi yang paling tepat itu kita harus menggunakan properti dicss yang namanya clear*/
+    /*9clear befungsi untuk menghentika / membersihkan float*/
+    /*10value dalam properti clear yaitu left,right,dan both(kedua duanya*/
+    /*11nah cara membersihkanya kita menggunakan div kosong diakhir dari floatnya
+}*/
+.container{
+    width: 700px;
+    border: 1px solid;
+    margin: auto;
+    padding: 4px;
+}
+.container img{
+    width: 300px;
+    float: left;
+    padding: 4px;
+}
+
+/*.clear{
+    clear: left; /*13kita kasih value left karena kita bersihkan yang left
+}16 tetapi cara ini membuat kode html kita tidak rapi/teratur nah ada cara efektivnya lagi yaitu menggunakan micro clearfix
+/*17 google aja micro clearfix lalu copykan dicss dan tambahkan disamping div class="container cf" yaitu cf*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }/*nah hasinya akan sama persis */

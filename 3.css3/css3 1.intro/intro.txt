@@ -1,0 +1,11 @@
+ Css3 ini adalah generasi ke-3 dari spesifikasi css yang direkomendasikan oleh W3C(organisani yang membuat
+ aturan terkait dengan teknologi-teknologi web dan intenet)
+
+Css3 dibagi menjadi beberapa modul, dan tiap tiap modulnya 
+menambahkan kemampuan/fitur yang ada dicss2
+
+lalu kenapa kita harus menggunakan Css3?
+-membuat website lebih fleksibel dan interaktif
+-membuat mock-up dengan cepat tanpa bantuan bahasa scripting
+-mengurangi penggunaan gambar=kecepatan load halaman
+-penggunaan selector untuk menghindari penggunaan markup yang boros

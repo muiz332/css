@@ -1,0 +1,95 @@
+/*yang bisa dilakikan menggunakan properti float*/
+/*text wrapping yaitu membuat teks mengelilingi gambar/ elemen lain*/
+/*image gallry yaitu membuat serangkaian gambar menjadi galeri*/
+/*multi-column layout yaitu membuat halaman memiliki beberapa kolom*/
+/*dll*/
+
+
+/*float yaitu properti css untuk mengatur posisi sebuah elemen.Sebuah elemen dapat dipaksa untuk berada disebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini.*/
+/*properti float memiliki value left,right,dan none(default)*/
+
+/*contoh uot-of flow*/
+/*.container{
+    width: 700px;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+}
+.satu, .dua, .tiga{
+    height: 100px;
+    width: 100px;
+}
+.satu{
+  background-color: red;
+  float: left;
+}
+.dua{
+    background-color: green;
+}
+.tiga{
+    background-color: blue;
+}*/
+/*jika kita kasih pembungkus div maka warna merah akan menumpuk warna hijau*/
+
+/*nah bagaimana jika kita tidak membungkusnya dan kita kasih float: right; maka warna merah akan bergeser kekanan*/
+
+/*nah jika kita tidak membungkusnya dan kita kasih left maka warna hijau akan dibawah merah*/
+
+/*dan jika tidak memiliki pembungkus dan kita kasih float right maka warna merah akan bergeser ke kana dan warna yang lain akan menggantika posisi warna merah yang pertama*/
+
+/*contoh text wrapping
+.container{
+    width: 700px;
+    border: 1px solid;
+    margin: auto;
+
+}
+.container img{
+    width: 470px;
+    float: right;
+    margin: 4px;
+}*/
+
+/*contoh image galery 
+.container{
+    width: 700px;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+}
+.kotak{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    text-align: center;
+    line-height: 80px;
+    margin: 2px;
+    float: left;/*jika diganti right maka urutannya mulai dari kanan
+}*/
+.container{
+    width: 800px;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+}
+/*hitung widthnya agar tidak memebili atau mengurangi parentnnya yaitu 800px*/
+.kiri{
+  background-color: green;
+    width: 150px;
+    height: 500px;
+    float: left;
+}
+.tengah{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+.kanan{
+    background-color: lightskyblue;
+    width: 150px;
+    height: 500px;
+    float: left;
+}
+/*maka munculnya akan bersebelahan karena kita berikan float: left: semua warnanya*/
+/*gunakan border : box ketika anda menggunakan padding atau border*/

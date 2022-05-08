@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+.container{
+    /*nah jika dibuka dihp nanti akan ada scroll kanan dan kiri kalo kalian ingin hal itu tidak terjadi maka kita kasih max-width: ;*/
+    max-width: 800px;/*maka dia akan menjadi vertikal tetapi dia tidak memiliki scrol ke kanan maupun kekiri*/
+    margin: 50px auto;
+    /*ini untuk dihp*/
+
+}
+.layanan-satu{
+    background-color: rgba(51, 51, 248, 0.849);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.layanan-dua{
+    background-color: rgb(48, 247, 48);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.layanan-tiga{
+    background-color: rgb(240, 24, 24);
+    padding: 20px;
+    box-sizing: border-box;
+}
+/*responsif jika hp maka akan terlihat jelek*/
+/*lalu bagaimana cara mengatasinya kita gunakan @media*/
+/*kalo misalnya lebarnya lebih besar dari 600px maka otomatis menggunakan yang media*/
+/*media ini untuk dilaptop
+dan container yang diatas untuk dihp*/
+@media (min-width: 600px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan-satu, .layanan-dua, .layanan-tiga{
+        width: 30%;
+    }
+}
+/*media= kalo lebarnya berapa pakek css yang mana*/
+/*maka akan terlihat kebawah jika kita ingin penuh maka pengaturan lebar itemsnya itu dikasih dimedia

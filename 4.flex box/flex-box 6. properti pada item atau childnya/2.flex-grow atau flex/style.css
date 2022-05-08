@@ -1,0 +1,27 @@
+/*flex-grow/flex*/
+/*flex-grow/flex berfungsi untuk mengatur ukuran dari itemsnya*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    border: 4px solid;
+    margin: 30px auto;
+    display: flex;
+}
+.container div{
+    /*sebelummyakan kita atur lebar dan tingginya nah sekarang kita hapus lalu kasih flex-grow/flex*/
+    background-color: rgba(0, 0, 255, 0.836);
+    margin: 4px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex-grow: 2;
+}
+/*nah sekarang bagaimana jika saya ingin kotak kedua dua kalilipat lebih besar dari yang lain?*/
+/*dan jangan lupa kalo tidak berubah lihat specificitynya*/
+.container div.dua{
+    flex-grow: 3;
+}
+.container div.tiga{
+    flex: 4;
+}
